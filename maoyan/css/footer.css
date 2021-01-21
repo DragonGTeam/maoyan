@@ -1,0 +1,9 @@
+.breadcrumb-item + .breadcrumb-item::before{
+				content:"|";
+				color: #fff;
+			}
+.bg-dark{background-color: #000 !important;}
+.foot{font-size: 14px;text-align: center;}
+.foot a{color: #fff;}
+.foot p{margin-bottom: 0;}
+.foot ul{margin-bottom: 0;}

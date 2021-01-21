@@ -1,0 +1,148 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Login_page.js"></script>
+    <script src="js/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/comm.css" />
+    <link rel="stylesheet" type="text/css" href="css/Login_page.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header>
+        <a href="index.html">猫眼电影</a>
+      </header>
+      <div class="container d-flex">
+        <div class="tu">
+          <img src="img/denglu1.png" />
+        </div>
+        <div class="reg">
+          <form class="from">
+            <div id="k"></div>
+            <span>
+              <a href="">
+                手机动态码登录
+                <i></i>
+              </a>
+              账号登录
+            </span>
+            <div id="app">
+              <div class="input1 mt-3">
+                <span>
+                  <span>+86</span>
+                  <i class="jiantou"></i>
+                </span>
+                <input
+                  :disabled="isAgree==false"
+                  type="text"
+				  placeholder="手机号"
+				  v-model="phone"
+                />
+                <span :class="phoneClass">{{phoneMsg}}</span>
+              </div>
+
+              <div class="input1 mi mt-3">
+                <i class="suozi"></i>
+                <input
+                  :disabled="isAgree==false"
+                  class="ml-5"
+                  type="password"
+				  placeholder="密码"
+				  v-model="pwd"
+				/>
+				<span :class="pwdClass">{{pwdMsg}}</span>
+              </div>
+              <div class="mt-2">
+                <input v-model="isAgree" type="checkbox" id="tongyi" /><label
+                  for="tongyi"
+                  >我同意本站的使用条款</label
+                >
+                <a class="float-right text-danger small" href="">忘记密码?</a>
+              </div>
+              <div class="mt-4">
+                <button
+                  :disabled="isAgree==false"
+                  class="btn btn-danger w-100"
+                  type="button"
+                >
+                  登录
+                </button>
+              </div>
+            </div>
+            <p class="pt-1">
+              还没有账号?
+              <a class="text-danger small" href="register.html">免费注册</a>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="weiba">
+        <p>
+          ©2021 美团网团购 meituan.com 京ICP证070791号
+          京公网安备11010502025545号
+        </p>
+      </div>
+    </div>
+    <script>
+      new Vue({
+        el: "#app",
+        data: {
+          isAgree: false,
+		  phone:"",
+		  pwd:"",
+		  phoneClass:{
+			  syccess:false,//用于控制验证正确时的class
+			  fail:false//用于控制验证失败时的class
+		  },
+		  pwdClass:{
+			  syccess:false,//用于控制验证正确时的class
+			  fail:false//用于控制验证失败时的class
+		  },
+		  phoneMsg:"",//保存出错后的错误提示
+		  pwdMsg:""
+		},
+		watch:{
+			phone(){
+				var reg=/^1[3-9]\d{9}$/;
+				var result=reg.test(this.phone);
+				if(result==true){
+					this.phoneMsg="√";
+					this.phoneClass={
+						success:true,//将succes样式类启用
+						fail:false//将fail样式类禁用
+					}
+				}else{
+					this.phoneMsg="×";
+					this.phoneClass={
+						success:false,//将succes样式类启用
+						fail:true//将fail样式类启用
+					}
+				}
+			},
+			pwd(){
+				var reg=/^\d{6}$/;
+				var result=reg.test(this.pwd);
+				if(result==true){
+					this.pwdMsg="√";
+					this.pwdClass={
+						success:true,//将succes样式类启用
+						fail:false//将fail样式类禁用
+					}
+				}else{
+					this.pwdMsg="×";
+					this.pwdClass={
+						success:false,//将succes样式类启用
+						fail:true//将fail样式类启用
+					}
+				}
+			}
+		}
+      });
+    </script>
+  </body>
+</html>

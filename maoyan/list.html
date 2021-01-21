@@ -1,0 +1,687 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>影院</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/axios.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/comm.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/list.css" />
+  </head>
+  <body>
+    <div id="kong"></div>
+    <!-- 紧急救援 -->
+    <div class="container-fluid bg1">
+      <!-- 紧急救援 -->
+      <div class="container">
+        <div class="float-left">
+          <div>
+            <img
+              src="https://p1.meituan.net/moviemachine/56d4089f70bce77395597e0b5b6ff3a12891795.jpg@464w_644h_1e_1c"
+            />
+          </div>
+        </div>
+        <div class="float">
+          <div class="">
+            <h1>紧急救援</h1>
+            <div class="text-20">The Rescue</div>
+            <ul class="list-unstyled">
+              <li>
+                <a href="">剧情</a>
+                <a href="">灾难</a>
+                <a href="">动作</a>
+              </li>
+              <li>中国大陆/ 134分钟</li>
+              <li>2020-12-18 08:00中国大陆上映</li>
+            </ul>
+          </div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="float2">
+          <div class="d-flex">
+            <a class="d-inline-block" href="">
+              <div>
+                <i></i>
+                <span>想看</span>
+              </div>
+            </a>
+            <a class="d-inline-block" href="">
+              <div>
+                <i id="pinglun"></i>
+                <span>评分</span>
+              </div>
+            </a>
+          </div>
+          <a class="btn btn-danger" href="#">查看更多电影详情</a>
+        </div>
+        <div class="float3">
+          <div>
+            <p class="mb-0">猫眼口碑</p>
+            <div>
+              <span class="text-30">9.2</span>
+              <div class="float-right ml-2">
+                <div></div>
+                <span>
+                  <span>14.2万人评论</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="mt-2">
+            <p class="mb-0">累计票房</p>
+            <div class="mt-2">
+              <span class="text-30 text-white">4.48</span>
+              <span>亿</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 影院,时间,地址 -->
+    <div class="container mt-5">
+      <!-- 选择框 -->
+      <div id="liebiao">
+        <div class="border">
+          <ul class="list-unstyled mb-0">
+            <!-- 日期 -->
+            <li class="pt-2 pb-2">
+              <div>日期:</div>
+              <ul id="riqi" class="list-unstyled">
+                <li>
+                  <a class="active1 text-white" href="">今天1月20</a>
+                </li>
+                <li>
+                  <a href="">明天 1月21</a>
+                </li>
+                <li>
+                  <a href="">后天 1月22</a>
+                </li>
+                <li>
+                  <a href="">周四 1月23</a>
+                </li>
+                <li>
+                  <a href="">周五 1月24</a>
+                </li>
+                <li>
+                  <a href="">周六 1月25</a>
+                </li>
+                <li>
+                  <a href="">周日 1月26</a>
+                </li>
+              </ul>
+            </li>
+            <!-- 品牌 -->
+            <li class="pt-2 pb-2">
+              <div class="">品牌:</div>
+              <ul id="pinpai" class="list-unstyled">
+                <li>
+                  <a class="active1 text-white" href="">全部</a>
+                </li>
+                <li>
+                  <a href="">万达影城</a>
+                </li>
+                <li>
+                  <a href="">奥斯卡国际影城</a>
+                </li>
+                <li>
+                  <a href="">大地影院</a>
+                </li>
+                <li>
+                  <a href="">CGV影城</a>
+                </li>
+                <li>
+                  <a href="">文投国际影城</a>
+                </li>
+                <li>
+                  <a href="">横店影视</a>
+                </li>
+                <li>
+                  <a href="">博纳国际影城</a>
+                </li>
+                <li>
+                  <a href="">耀莱成龙国际影城</a>
+                </li>
+                <li>
+                  <a href="">首映国际影城</a>
+                </li>
+                <li>
+                  <a href="">苏宁影城</a>
+                </li>
+                <li>
+                  <a href="">卢米埃影城</a>
+                </li>
+                <li>
+                  <a href="">沃美影城</a>
+                </li>
+                <li>
+                  <a href="">恒大嘉凯影城</a>
+                </li>
+                <li>
+                  <a href="">SFC上影影城</a>
+                </li>
+                <li>
+                  <a href="">UME国际影城</a>
+                </li>
+                <li>
+                  <a href="">曲江国际影城</a>
+                </li>
+                <li>
+                  <a href="">汉鼎宇佑影城</a>
+                </li>
+                <li>
+                  <a href="">时代华纳国际影城</a>
+                </li>
+                <li>
+                  <a href="">和平电影城</a>
+                </li>
+                <li>
+                  <a href="">幸福蓝海国际影城</a>
+                </li>
+                <li>
+                  <a href="">中影国际影城</a>
+                </li>
+                <li>
+                  <a href="">星轶starx影城</a>
+                </li>
+                <li>
+                  <a href="">高景国际影城</a>
+                </li>
+                <li>
+                  <a href="">金逸影城</a>
+                </li>
+                <li>
+                  <a href="">欢乐小马电影城</a>
+                </li>
+                <li>
+                  <a href="">自由人影城</a>
+                </li>
+                <li>
+                  <a href="">橙天嘉禾影城</a>
+                </li>
+                <li>
+                  <a href="">喜满客影城</a>
+                </li>
+                <li>
+                  <a href="">星美国际影城</a>
+                </li>
+                <li>
+                  <a href="">中影星美国际影城</a>
+                </li>
+                <li>
+                  <a href="">泰禾影城</a>
+                </li>
+                <li>
+                  <a href="">其他</a>
+                </li>
+              </ul>
+            </li>
+            <!-- 行政区 -->
+            <li class="pt-2 pb-2">
+              <div>行政区:</div>
+              <ul id="pinpai" class="list-unstyled">
+                <li>
+                  <a class="active1 text-white ml-2" href="">全部</a>
+                </li>
+                <li>
+                  <a href="">地铁附近</a>
+                </li>
+                <li>
+                  <a href="">雁塔区</a>
+                </li>
+                <li>
+                  <a href="">碑林区</a>
+                </li>
+                <li>
+                  <a href="">灞桥区</a>
+                </li>
+                <li>
+                  <a href="">新城区</a>
+                </li>
+                <li>
+                  <a href="">莲湖区</a>
+                </li>
+                <li>
+                  <a href="">鄠邑区</a>
+                </li>
+                <li>
+                  <a href="">长安区</a>
+                </li>
+                <li>
+                  <a href="">临潼区</a>
+                </li>
+                <li>
+                  <a href="">阎良区</a>
+                </li>
+                <li>
+                  <a href="">高陵区</a>
+                </li>
+                <li>
+                  <a href="">蓝田县</a>
+                </li>
+                <li>
+                  <a href="">周至县</a>
+                </li>
+              </ul>
+            </li>
+            <!-- 特殊厅 -->
+            <li class="pt-2 pb-2">
+              <div>特殊厅:</div>
+              <ul id="pinpai" class="list-unstyled">
+                <li>
+                  <a class="active1 text-white ml-2" href="">全部</a>
+                </li>
+                <li>
+                  <a href="">IMAX厅</a>
+                </li>
+                <li>
+                  <a href="">CGS中国巨幕厅</a>
+                </li>
+                <li>
+                  <a href="">杜比全景声厅</a>
+                </li>
+                <li>
+                  <a href="">Dolby Cinema厅</a>
+                </li>
+                <li>
+                  <a href="">RealD厅</a>
+                </li>
+                <li>
+                  <a href="">RealD 6FL厅</a>
+                </li>
+                <li>
+                  <a href="">4DX厅</a>
+                </li>
+                <li>
+                  <a href="">DTS:X 临境音厅</a>
+                </li>
+                <li>
+                  <a href="">儿童厅</a>
+                </li>
+                <li>
+                  <a href="">4K厅</a>
+                </li>
+                <li>
+                  <a href="">4D厅</a>
+                </li>
+                <li>
+                  <a href="">60帧厅</a>
+                </li>
+                <li>
+                  <a href="">巨幕厅</a>
+                </li>
+                <li>
+                  <a href="">CINITY厅</a>
+                </li>
+                <li>
+                  <a href="">MX4D厅</a>
+                </li>
+              </ul>
+            </li>
+            <!-- 服务 -->
+            <li class="pt-2">
+              <div>服务:</div>
+              <ul id="pinpai" class="list-unstyled">
+                <li>
+                  <a class="active1 text-white" href="">全部</a>
+                </li>
+                <li>
+                  <a href="">可改签</a>
+                </li>
+                <li>
+                  <a href="">可退票</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div></div>
+      </div>
+      <!-- 影院列表 -->
+      <div id="liebiao2" class="mt-4">
+        <h2>
+          <span class="font-weight-bold">影院列表</span>
+          <div>
+            <span>
+              <img
+                src="http://p1.meituan.net/scarlett/af58aa7b387e1c4d26797f027733ace2309.png"
+              />筛选
+            </span>
+            <ul class="list-unstyled saixuan">
+              <li><a href="">距离近</a></li>
+              <li><a href="">价格低</a></li>
+            </ul>
+          </div>
+        </h2>
+        <div class="yingcheng">
+          <div class="yingcheng-in">
+            <a href="">CGV影城（万象城ScreenX店)</a>
+            <p>地址：未央区三桥新街1076号华润万象城4层</p>
+            <div>
+              <span>改签</span>
+              <span>折扣卡</span>
+            </div>
+          </div>
+          <div>
+            <a href="list_goupiao.html">选座购票</a>
+          </div>
+          <div>
+            <span>￥</span>
+            <span>
+              <span>44</span>
+            </span>
+            <span>起</span>
+            <span>11km</span>
+          </div>
+        </div>
+        <div class="yingcheng">
+          <div class="yingcheng-in">
+            <a href="">CGV影城（万象城ScreenX店)</a>
+            <p>地址：未央区三桥新街1076号华润万象城4层</p>
+            <div>
+              <span>改签</span>
+              <span>折扣卡</span>
+            </div>
+          </div>
+          <div>
+            <a href="list_goupiao.html">选座购票</a>
+          </div>
+          <div>
+            <span>￥</span>
+            <span>
+              <span>40</span>
+            </span>
+            <span>起</span>
+            <span>11km</span>
+          </div>
+        </div>
+        <div class="yingcheng">
+          <div class="yingcheng-in">
+            <a href="">CGV影城（万象城ScreenX店)</a>
+            <p>地址：未央区三桥新街1076号华润万象城4层</p>
+            <div>
+              <span>改签</span>
+              <span>折扣卡</span>
+            </div>
+          </div>
+          <div>
+            <a href="list_goupiao.html">选座购票</a>
+          </div>
+          <div>
+            <span>￥</span>
+            <span>
+              <span>34</span>
+            </span>
+            <span>起</span>
+            <span>11km</span>
+          </div>
+        </div>
+        <div class="yingcheng">
+          <div class="yingcheng-in">
+            <a href="">CGV影城（万象城ScreenX店)</a>
+            <p>地址：未央区三桥新街1076号华润万象城4层</p>
+            <div>
+              <span>改签</span>
+              <span>折扣卡</span>
+            </div>
+          </div>
+          <div>
+            <a href="list_goupiao.html">选座购票</a>
+          </div>
+          <div>
+            <span>￥</span>
+            <span>
+              <span>44</span>
+            </span>
+            <span>起</span>
+            <span>11km</span>
+          </div>
+        </div>
+        <div class="yingcheng">
+          <div class="yingcheng-in">
+            <a href="">CGV影城（万象城ScreenX店)</a>
+            <p>地址：未央区三桥新街1076号华润万象城4层</p>
+            <div>
+              <span>改签</span>
+              <span>折扣卡</span>
+            </div>
+          </div>
+          <div>
+            <a href="list_goupiao.html">选座购票</a>
+          </div>
+          <div>
+            <span>￥</span>
+            <span>
+              <span>34</span>
+            </span>
+            <span>起</span>
+            <span>11km</span>
+          </div>
+        </div>
+        <div class="yingcheng">
+          <div class="yingcheng-in">
+            <a href="">CGV影城（万象城ScreenX店)</a>
+            <p>地址：未央区三桥新街1076号华润万象城4层</p>
+            <div>
+              <span>改签</span>
+              <span>折扣卡</span>
+            </div>
+          </div>
+          <div>
+            <a href="list_goupiao.html">选座购票</a>
+          </div>
+          <div>
+            <span>￥</span>
+            <span>
+              <span>44</span>
+            </span>
+            <span>起</span>
+            <span>11km</span>
+          </div>
+        </div>
+        <div class="yingcheng">
+          <div class="yingcheng-in">
+            <a href="">CGV影城（万象城ScreenX店)</a>
+            <p>地址：未央区三桥新街1076号华润万象城4层</p>
+            <div>
+              <span>改签</span>
+              <span>折扣卡</span>
+            </div>
+          </div>
+          <div>
+            <a href="list_goupiao.html">选座购票</a>
+          </div>
+          <div>
+            <span>￥</span>
+            <span>
+              <span>40</span>
+            </span>
+            <span>起</span>
+            <span>11km</span>
+          </div>
+        </div>
+        <div class="yingcheng">
+          <div class="yingcheng-in">
+            <a href="">CGV影城（万象城ScreenX店)</a>
+            <p>地址：未央区三桥新街1076号华润万象城4层</p>
+            <div>
+              <span>改签</span>
+              <span>折扣卡</span>
+            </div>
+          </div>
+          <div>
+            <a href="list_goupiao.html">选座购票</a>
+          </div>
+          <div>
+            <span>￥</span>
+            <span>
+              <span>44</span>
+            </span>
+            <span>起</span>
+            <span>11km</span>
+          </div>
+        </div>
+        <div class="yingcheng">
+          <div class="yingcheng-in">
+            <a href="">CGV影城（万象城ScreenX店)</a>
+            <p>地址：未央区三桥新街1076号华润万象城4层</p>
+            <div>
+              <span>改签</span>
+              <span>折扣卡</span>
+            </div>
+          </div>
+          <div>
+            <a href="list_goupiao.html">选座购票</a>
+          </div>
+          <div>
+            <span>￥</span>
+            <span>
+              <span>44</span>
+            </span>
+            <span>起</span>
+            <span>11km</span>
+          </div>
+        </div>
+        <div class="yingcheng">
+          <div class="yingcheng-in" class="yingcheng-in">
+            <a href="">CGV影城（万象城ScreenX店)</a>
+            <p>地址：未央区三桥新街1076号华润万象城4层</p>
+            <div>
+              <span>改签</span>
+              <span>折扣卡</span>
+            </div>
+          </div>
+          <div>
+            <a href="list_goupiao.html">选座购票</a>
+          </div>
+          <div>
+            <span>￥</span>
+            <span>
+              <span>45</span>
+            </span>
+            <span>起</span>
+            <span>11km</span>
+          </div>
+        </div>
+        <div class="yingcheng">
+          <div class="yingcheng-in">
+            <a href="">CGV影城（万象城ScreenX店)</a>
+            <p>地址：未央区三桥新街1076号华润万象城4层</p>
+            <div>
+              <span>改签</span>
+              <span>折扣卡</span>
+            </div>
+          </div>
+          <div>
+            <a href="list_goupiao.html">选座购票</a>
+          </div>
+          <div>
+            <span>￥</span>
+            <span>
+              <span>44</span>
+            </span>
+            <span>起</span>
+            <span>11km</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 分页 -->
+    <div id="app" class="mt-4">
+      <ul>
+        <li v-if="cur>1"><a v-on:click="cur--,pageClick()">上一页</a></li>
+        <li v-if="cur==1"><a class="banclick">上一页</a></li>
+        <li v-for="index in indexs" v-bind:class="{ 'active': cur == index}">
+          <a v-on:click="btnClick(index)">{{ index }}</a>
+        </li>
+        <li v-if="cur!=all"><a v-on:click="cur++,pageClick()">下一页</a></li>
+        <li v-if="cur == all"><a class="banclick">下一页</a></li>
+      </ul>
+    </div>
+    <footer>
+      <iframe class="iframe_footer" src="footer.html"></iframe>
+    </footer>
+    <script>
+      new Vue({
+        el: "#app",
+        data() {
+          return {
+            all: 10, //总页数
+            cur: 1, //当前页码
+            totalPage: 0, //当前条数
+          };
+        },
+        methods: {
+          //请求数据
+          dataListFn: function (index) {
+            this.$axios
+              .get("http://127.0.0.1:8090/demand/selectListByPage", {
+                params: {
+                  page: index,
+                  limit: "10",
+                  state: 0,
+                },
+              })
+              .then((res) => {
+                if (res.data.message == "success") {
+                  this.dataList = [];
+                  for (let i = 0; i < res.data.data.length; i++) {
+                    this.dataList.push(res.data.data[i]);
+                  }
+                  this.all = res.data.totalPage; //总页数
+                  this.cur = res.data.pageNum;
+                  this.totalPage = res.data.totalPage;
+                }
+              });
+          },
+          //分页
+          btnClick: function (data) {
+            //页码点击事件
+            if (data != this.cur) {
+              this.cur = data;
+            }
+            //根据点击页数请求数据
+            this.dataListFn(this.cur.toString());
+          },
+          pageClick: function () {
+            //根据点击页数请求数据
+            this.dataListFn(this.cur.toString());
+          },
+        },
+        computed: {
+          //分页
+          indexs: function () {
+            var left = 1;
+            var right = this.all;
+            var ar = [];
+            if (this.all >= 5) {
+              if (this.cur > 3 && this.cur < this.all - 2) {
+                left = this.cur - 2;
+                right = this.cur + 2;
+              } else {
+                if (this.cur <= 3) {
+                  left = 1;
+                  right = 5;
+                } else {
+                  right = this.all;
+                  left = this.all - 4;
+                }
+              }
+            }
+            while (left <= right) {
+              ar.push(left);
+              left++;
+            }
+            return ar;
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

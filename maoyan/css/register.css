@@ -1,0 +1,93 @@
+header{
+	border-bottom: 2px solid #D8D8D8;
+	border-bottom-color:#e02025 ;
+	min-width: 980px;
+	color: #666;
+}
+header>div:after{
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+	content: " ";
+}
+header>div{
+	margin: 0 auto;
+	padding: 10px 0;
+	width: 980px;
+}
+header>div>a{
+	width: 133px;height: 40px;
+	background-image: url(../img/denglu.png);
+	background-position: -536px -748px;
+	margin-top: -2px;
+	text-indent: -1000px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	float: left;
+}
+.container{
+	margin: 0 auto 30px;
+	padding-top: 30px;
+	width: 980px;
+	min-height: 300px;
+}
+.form-field{
+	position: relative;
+	padding: 8px 0 8px 110px;
+	zoom: 1;
+}
+.form-field>label{
+	position: absolute;
+	left: 0;
+	width: 100px;
+	padding-top: 6px;
+	font-size: 14px;
+	text-align: right;
+	color: #333;
+}
+.form-field>input{
+	width: 248px;
+	padding: 5px;
+	border: 1px solid #aaa;
+	line-height: 24px;
+	vertical-align: top;
+}
+.zc{
+	display: inline-block;
+	margin-left: 4px;
+	padding: 6px 0;
+	line-height: 24px;
+	font-size: 12px;
+	color: #999;
+	vertical-align: top;
+	zoom: 1;
+}
+.anniu{
+	font-size: 12px;
+	color: #333;
+	background-color: #dedede;
+	border: 1px solid #e3e3e3;
+	border-bottom: 1px solid #aaa;
+	background-size: 100%;
+	background-image: linear-gradient(to bottom,#f7f7f7,#dedede);
+	margin-left: 110px;
+}
+.dengji{
+	position: relative;
+	top: 0;left: 0;
+}
+.dengji span{
+	display: block;
+	float: left;
+	text-align: center;
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	width: 83px;
+	border-right: 2px solid #fff;
+	color: #fff;
+	background-color: #eee;
+}
+p{text-align: center;color: #999;font-size: 13px;padding: 15px;}

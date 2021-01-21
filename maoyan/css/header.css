@@ -1,0 +1,233 @@
+#header{
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	width: 100%;
+	min-width: 1200px;
+	background-color: #fff;
+	border-bottom: 1px solid #d8d8d8;
+	margin: 0;padding: 0;
+}
+#header-in{
+	width: 1200px;
+	margin: 0 auto;
+	height: 80px;
+}
+/* logo */
+#header-in>span{margin: 0;padding: 0;}
+.logo{
+	float: left;
+	width: 133px;
+	height: 80px;
+	background: url(../img/logo.png) no-repeat 0;
+}
+/* 定位 */
+.xian{
+	position: relative;
+	float: left;
+	margin: 0 8px;
+	height: 100%;
+}
+.xian-in{
+	cursor: pointer;
+	height: 100%;
+	padding: 0 10px;
+	border: 1px solid transparent;
+	border-width: 0 1px;
+	z-index: 101;
+}
+.xian-in>div{
+	display: inline-block;
+	margin-top: 28px;
+	color: #333;
+}
+/* 标签 */
+.shouye{
+	display: inline-block;
+	background-color: #fff;
+	overflow: hidden;
+	float: left;
+}
+.shouye>ul{
+	list-style:none;
+	border: none;
+	margin: 0;padding: 0;
+}
+.shouye>ul li{float: left;}
+.shouye>ul li a{
+	text-align: center;
+	display: inline-block;
+	height: 80px;width: 70px;
+	line-height: 80px;
+	font-size: 18px;
+	color: #333;
+}
+.shouye>ul .active a{color: #fff;}
+.shouye>ul .active a:hover{color: #fff;}
+.shouye>ul li a:hover{
+	color: #EF4238;
+	text-decoration: none;
+}
+.active{
+	background-color: #EF4238;
+}
+/* 用户登录 */
+.user{
+	float: right;
+	position: relative;
+	z-index: 9999;
+	height: 100%;
+}
+.user-in{
+	display: block;
+	border: 1px solid transparent;
+	border-top: none;
+	border-bottom: none;
+	padding: 0 9px;
+	width: 78px;height: 100%;
+}
+.user-in>img{
+	width: 40px;height: 40px;
+	margin-top: 20px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.user-in>span{margin-top: 22px;}
+.user-in>ul{
+	padding: 15px 24px 5px;
+	display: none;
+	position: absolute;
+	right: 0;top: 80px;
+	border: 1px solid #d8d8d8;
+	background-color: #fff;
+	font-size: 14px;
+	color: #333;
+	text-align: center;
+}
+.user-in>ul>li{
+	margin-bottom: 6xp;
+	list-style: none;
+	border: 0;
+}
+.user-in>ul>li>a{
+	color: #999;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.user-in>ul>li>a:hover{color: #EF4238;text-decoration: none;}
+.user-in:hover{
+	border-color: #d8d8d8;
+}
+.user-in:hover .denglu{
+	display: block;
+}
+.user-in:hover span{transform: rotate(180deg)}
+.user-in:hover:after{
+	content: " ";
+	position: absolute;
+	height: 10px;
+	bottom: -1px;
+	left: 1px;right: 1px;
+	background-color: #fff;
+}
+/* 搜索 */
+.form{
+	float: right;
+	margin: 20px 10px 0 0;
+	position: relative;
+}
+.form input{box-sizing: border-box;	border: 0;}
+.form>input:first-child{
+	display: inline-block;
+	height: 40px;width: 220px;
+	line-height: 1.2;
+	padding: 0 40px 0 20px; 
+	border: 1px solid #ccc;
+	font-size: 14px;
+	border-radius: 30px;
+	background-color: #faf8fa;
+	overflow: hidden;
+	color: #333;
+}
+.form>input:last-child{
+	display: inline-block;
+	position: absolute;
+	left: 180px;top: 0;
+	height: 40px;width: 40px;
+	background-color: #EF4238;
+	border-radius: 30px;
+	background-image: url(../img/chaxun.png);
+	cursor: pointer;
+}
+/* .form>input:focus{outline: none;} */
+/* APP下载 */
+.APP{
+	float: right;
+	width: 132px;height: 80px;
+	margin-right: 10px;
+	position: relative;
+}
+.APP>a{
+	display: block;
+	padding-top: 28px;
+	padding-left: 14px;
+	width: 100%;height: 100%;
+	box-sizing: border-box;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+}
+.APP>a>span:first-child{
+	float: left;
+	display: inline-block;
+	width: 15px;height: 24px;
+	background-image: url(../img/shouji.png);
+	background-size: cover;
+}
+.APP>a>span:nth-child(2){
+	float: left;
+	display: inline-block;
+	font-size: 16px;
+	color: #000;
+	height: 24px;
+	line-height: 24px;
+	margin: 0 7px;
+}
+.APP>a>span:nth-child(3){
+	float: left;
+	position: relative;
+	top: 8px;
+}
+.APP>a:hover{
+	border-left: 1px solid #dcd4d7;
+	border-right: 1px solid #dcd4d7;
+}
+.APP>a>div{
+	display: none;
+	width: 132px;height: 165px;
+	position: absolute;
+	left: 0;top: 80px;
+	background-color: #fff;
+	background-image: url(../img/微信图片_20201228135217.jpg);
+	background-position: 24px 14px;
+	background-size: 82px 82px;
+	background-repeat: no-repeat;
+	border: 1px solid #DCD4D7;
+	border-top: 0;
+}
+.APP>a>div>p:first-child{
+	margin-top: 115px;
+	margin-bottom: 3px;
+	color: #333;
+	text-align: center;
+}
+.APP>a>div>p:last-child{
+	text-align: center;
+	font-size: 14px;
+	color: #999;
+	margin: 0;
+}
+.APP>a:hover .APP-in{
+	display: block;
+}
+.APP>a:hover .caret{transform: rotate(180deg)}

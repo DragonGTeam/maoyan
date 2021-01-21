@@ -1,0 +1,281 @@
+
+/* 正在热播 */
+#d2{margin: 62px 0 0;}
+#d2 a{color: #ef4238;}
+#d2>a{float: right;margin-top: -25px;margin-right: 53px;}
+#d2>span{float: right;margin-top: -20px;margin-right: 40px;}
+#d2>div ul li{margin: 0 30px 0px 0;display: flex;flex-direction: column;}
+#d2>div ul li a:hover{background-color: #ef4238;color: #fff;text-decoration: none;border: 0!important;}
+#d2>div ul li:first-child a:nth-child(2){
+	display: inline-block;
+	height: 39px;
+	border: 1px solid #DDDDDD;
+	text-align: center;
+	line-height: 39px;
+	border-top: 0;
+}
+#d2>div ul li:nth-child(2) a:nth-child(2){
+	display: inline-block;
+	height: 39px;
+	border: 1px solid #DDDDDD;
+	text-align: center;
+	line-height: 39px;
+	border-top: 0;
+}
+#d2>div ul li:nth-child(2) a:nth-child(2){
+	display: inline-block;
+	height: 39px;
+	border: 1px solid #DDDDDD;
+	text-align: center;
+	line-height: 39px;
+	border-top: 0;
+}
+#d2>div ul li:nth-child(3) a:nth-child(2){
+	display: inline-block;
+	height: 39px;
+	border: 1px solid #DDDDDD;
+	text-align: center;
+	line-height: 39px;
+	border-top: 0;
+}
+#d2>div ul li:nth-child(3) a:nth-child(2){
+	display: inline-block;
+	height: 39px;
+	border: 1px solid #DDDDDD;
+	text-align: center;
+	line-height: 39px;
+	border-top: 0;
+}
+#d2>div ul li:last-child a:nth-child(2){
+	display: inline-block;
+	height: 39px;
+	border: 1px solid #DDDDDD;
+	text-align: center;
+	line-height: 39px;
+	border-top: 0;
+}
+.a_1{position: relative;}
+.wenzi{position: absolute;top: 80%;width: 100%;height: 45px;  color: #fff;background: url(../img/888.png)repeat-x bottom;line-height: 45px;}
+.text_1{color: #FFB400;}
+.text_1>i:first-child{font-size: 20px;}
+#d2>div ul li:hover{box-shadow: 0px 0px 10px #ccc;}
+/* 今日票房 */
+#d3{margin: 62px 30px 0;}
+#d3>div h2{color: #ef4238;}
+.h6{font-size: 16px !important; color: #333;}
+.h5{font-size: 18px !important;font-weight:normal;}
+.diyi{
+	font-style: italic;
+	display: inline-block;
+	position: absolute;
+	top:auto ;left: auto;
+	width: 22px;height: 25px;
+	background: url(../img/diyi.png)no-repeat;
+	background-size: contain;
+	}
+#jiuyuan{
+	display: inline-block;
+	float: right;
+	border: 1px solid #ddd;
+	width: 240px;
+	height: 80px;
+	border-left: 0;
+	}
+#jiuyuan>span{
+	display: inline-block;
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+	margin-top: 7px;
+	color: #333;
+	}
+#jiuyuan>span:first-child{font-size: 18px;}
+#jiuyuan>span:nth-child(2){color: #ef4238;line-height: 1px;}
+#jinri{
+	width: 360px;height: 360px;
+}
+#jinri>ul li{
+	display: inline-block;
+	margin: 10px 0 ;
+	display: flex;
+	flex-direction: column;
+	line-height: 40px;
+}
+#jinri>ul li+li{line-height: 48px;}
+#jinri a{color: #333;}
+#jinri a:hover{background-color: #F7F7F7;text-decoration: none;}
+/* 今日大盘点 */
+#d4{width: 360px;margin: 30px auto;}
+#d4>div h3{
+	margin-bottom: 0;
+	width: 45px;height: 113px;
+	background-color: #ef4238;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 24px;
+	padding: 8px;
+}
+#d4>div:nth-child(2){
+	background-color: #fdfdfd;
+	margin-left: 10px;
+}
+#d4>div:nth-child(2) p{
+	font-size: 33px;
+	font-weight: 700;
+	color: #ef4238;
+	margin: 14px 0 0 0 ;
+}
+#d4>div:nth-child(2) p>span{
+	font-size: 14px;
+	font-weight: normal;
+}
+#d4>div:nth-child(2) p>a{
+	font-size: 14px;
+	color: #ef4238;
+	font-weight: normal;
+	margin-left: 68px;
+}
+#d4>div:nth-child(2) p>a>img{margin-top: -3px;margin-left: 5px;}
+#d4>div:nth-child(2) p:nth-child(2){
+	margin: 7px auto ;
+	font-size: 13px;
+	color: #999999;
+	font-weight: 400;
+}
+#d4>div:nth-child(2) p:nth-child(2)>span{
+		margin-left: 17px;
+	}
+/* 即将上映 */
+#d5{margin: 62px 0 0;}
+#d5 a{color: #2D98F3;}
+#d5>h2{color: #2D98F3;}
+#d5>a{float: right;margin-top: -25px;margin-right: 53px;}
+#d5>span{float: right;margin-top: -20px;margin-right: 40px;}
+#d5>div ul li{margin: 0 30px 0px 0;}
+#d5>div ul li a:hover{color: #999;background-color: #fff;text-decoration: none;}
+#d5>div ul li a:nth-child(1){
+	border-left: 1px solid #EFEFEF;
+	border-bottom: 1px solid #EFEFEF;
+	text-align: center;
+	color: #999;
+	font-size: 14px;
+	line-height: 39px;
+}
+#d5>div ul li a:nth-child(2):hover{color: #fff;background-color: #2D98F3;}
+#d5>div ul li a:nth-child(2){
+	text-align: center;
+	border-right: 1px solid #EFEFEF;
+	border-bottom: 1px solid #EFEFEF;
+	font-size: 14px;
+	line-height: 39px;
+}
+#d5>div ul li:first-child div:nth-child(2){color: #FFB400;line-height: 32px;}
+#d5>div ul li:nth-child(2) div:nth-child(2){color: #FFB400;line-height: 32px;}
+#d5>div ul li:nth-child(3) div:nth-child(2){color: #FFB400;line-height: 32px;}
+#d5>div ul li:last-child div:nth-child(2){color: #FFB400;line-height: 32px;}
+#d5>div ul li div:first-child:hover{box-shadow: 0px 0px 10px #ccc;}
+.jjsy{
+		position: absolute;
+		top: 76px;left: 0;
+		background: url(../img/888.png)repeat-x bottom;
+		width: 100%;
+		height: 45px;
+		
+	}
+.jjsy>div{line-height: 45px;}
+	.text_3{font-size: 16px;text-align: left;margin-left: 0.5rem;}
+	#d5>div ul li div:first-child div:first-child:hover{box-shadow: none;}
+.fon-size{border: none;font-size: 14px;color: #999!important;text-align: center;line-height:40px;}
+.border{background-color: #fbfbfb;border-color: #efefef !important;}
+/* 热播电影 */
+#d6{margin: 62px 0 0;}
+#d6 a{color: #333;font-size: 14px;}
+#d6>div ul{margin-left: 20px;margin-bottom: 0;line-height: 53px;}
+#d6 span{float: right;margin-top: -37px;margin-right: 30px;}
+.position-absolute{
+		top: 75%;left: 0px;
+		color: fff;
+		font-size: 16px;
+		background: url(../img/888.png)repeat-x bottom;
+		width: 91%;
+	}
+	.ml-70{margin-left:70%;color: #FFB400;}
+	.w-83{width: 160px;}
+	.text_2{
+			width: 76%;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+.mt-80{margin-top: 80px;margin-left: 30px;width: 360px;}
+/* 最受期待 */
+#d7{color:#FFB400 ;}
+#d7 h2{font-size: 26px;font-weight: 400;}
+#d7 a{color: #FFB400;float: right;margin-top: -29px;margin-right: 27px;font-size: 14px;}
+#d7 a span:last-child{background: url(../img/下载1.png)top no-repeat;display: inline-block;width: 8px;height: 14px;}
+.border1{border: 1px solid #efefef;}
+.text-dark{font-size: 18px;}
+.text-muted{color: #999 !important;}
+.text-warning{font-size: 14px;line-height: 27px;}
+#d7_1 a:hover{background-color: #F7F7F7;text-decoration: none;}
+#lhr{width: 170px;border: 1px solid #EFEFEF;}
+#lhr img{width:100%;}
+.height_4{line-height: 48px;}
+.text-warning1{line-height: 48px; color: #FFB400;}
+.diyi3{
+	font-style: italic;
+	display: inline-block;
+	position: absolute;
+	top:auto ;left: auto;
+	width: 22px;height: 25px;
+	background: url(../img/123.png) no-repeat;
+	background-size: contain;
+	}
+	.dier{font-style: italic;
+	display: inline-block;
+	position: absolute;
+	top:auto ;left: auto;
+	width: 22px;height: 25px;
+	background-color: #FFB400;
+	color: #fff;
+	text-align: center;
+	}
+/* TOP 100 */
+#d8{margin: 62px 30px 0;}
+#d8>div h2{color: #FFB400;}
+#d8>div:first-child a{color: #FFB400;float: right;margin-top: -29px;font-size: 14px;}
+#d8>div:first-child a span:last-child{background: url(../img/下载1.png)top no-repeat;display: inline-block;width: 8px;height: 14px;}
+.diyi2{
+	font-style: italic;
+	display: inline-block;
+	position: absolute;
+	top:auto ;left: auto;
+	width: 22px;height: 25px;
+	background: url(../img/456.png) no-repeat;
+	background-size: contain;
+	}
+#jiuyuan2{
+	display: inline-block;
+	float: right;
+	border: 1px solid #ddd;
+	width: 240px;
+	height: 78px;
+	border-left: 0;
+	}
+#jiuyuan2>span{
+	display: inline-block;
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+	margin-top: 15px;
+	color: #333;
+	}
+#jiuyuan2>span:nth-child(2){color: #FD7E14;line-height: 10px;}
+#huazai{position: absolute;}
+#huazai i{display: inline-block;color: #fff;background-color: #ef4238;margin-top: -24px;width: 18px;
+text-align: center;}
+/* 热门影视人 */
+#remen>ul li a{color: #333;}
+#remen>ul li a:hover{color: #ef4238;text-decoration: none;}

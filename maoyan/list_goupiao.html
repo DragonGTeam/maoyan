@@ -1,0 +1,351 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="header.js"></script>
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.js"></script>
+		<script src="./js/list_goupiao.js" ></script>
+		<link rel="stylesheet" type="text/css" href="css/comm.css"/>
+		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/list_goupiao.css"/>
+	</head>
+	<body>
+		<div id="kong">
+		</div>
+		<div class="container">
+<!-- 进度条 -->
+			<div class="jindu">
+				<div class="jindu_1">
+					<span>1</span>
+					<div id="bar" class="bar bar1"></div>
+					<span>选择影片场次</span>
+				</div>
+				<div class="jindu_1">
+					<span>2</span>
+					<div id="bar" class="bar"></div>
+					<span>选择座位</span>
+				</div>
+				<div class="jindu_1">
+					<span>3</span>
+					<div class="bar"></div>
+					<span>14分钟内付款</span>
+				</div>
+				<div class="jindu_1">
+					<span>4</span>
+					<div class="bar bar2"></div>
+					<span>影院取票观影</span>
+				</div>
+			</div>
+<!-- 选座 -->
+			<div class="xuanzuo border d-flex">
+				<div class="xuanzuo_1">
+					<div class="xuanzuo_1-in">
+						<div>
+							<span>可选座位</span>
+						</div>
+						<div>
+							<span>已售座位</span>
+						</div>
+						<div>
+							<span>已选座位</span>
+						</div>
+						<div>
+							<span>情侣座位</span>
+						</div>
+					</div>
+		<!-- 普通座 -->
+					<div class="putongzuo ">
+						<div class="putongzuo_1">
+							<span class="row_id">1</span>
+							<span class="row_id">2</span>
+							<span class="row_id">3</span>
+							<span class="row_id-kong"></span>
+							<span class="row_id">5</span>
+							<span class="row_id">6</span>
+							<span class="row_id">7</span>
+							<span class="row_id">8</span>
+							<span class="row_id">9</span>
+							<span class="row_id">10</span>
+							<span class="row_id">11</span>
+							<span class="row_id">12</span>
+						</div>
+						<div class="putongzuo_2">
+							<div class="putongzuo_2-in">
+								<div>银幕中央</div>
+								<div></div>
+							</div>
+							<div class="zuowei ml-3">
+								<div class="row ">
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="kongzuo"></span>
+								</div>
+								<div class="row">
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+								</div>
+								<div class="row">
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+								</div>
+								<div class="empt-row"></div>
+								<div class="row">
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+								</div>
+								<div class="row">
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="kongzuo"></span>
+								</div>
+								<div class="row">
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+								</div>
+								<div class="row">
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="kongzuo"></span>
+								</div>
+								<div class="row">
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+								</div>
+								<div class="row">
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+								</div>
+								<div class="row">
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+								</div>
+								<div class="row">
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+									<span class="youzuo"></span>
+									<span class="kongzuo"></span>
+									<span class="youzuo"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="xinxi">
+					<div class="xinxi_in">
+						<div class="xinxi_in-1">
+							<img src="https://p1.meituan.net/moviemachine/56d4089f70bce77395597e0b5b6ff3a12891795.jpg@115w_158h_1e_1c" >
+						</div>
+						<div class="xinxi_in-2">
+							<p>紧急救援</p>
+							<div>
+								<span>类型 :</span>
+								<span class="heizi">剧情,灾难,动作</span>
+							</div>
+							<div>
+								<span>时长 :</span>
+								<span class="heizi">134分钟</span>
+							</div>
+						</div>
+					</div>
+					<div class="xinxi_neirong">
+						<div>
+							<span>影院 :</span>
+							<span class="heizi">CGV影城（万象城ScreenX店）</span>
+						</div>
+						<div>
+							<span>影厅 :</span>
+							<span class="heizi">斯柯达（1厅）</span>
+						</div>
+						<div>
+							<span>版本 :</span>
+							<span class="heizi">中文2D</span>
+						</div>
+						<div>
+							<span>场次 :</span>
+							<span class="text-danger">今天 1月7 20:30</span>
+						</div>
+						<div>
+							<span>票价 :</span>
+							<span class="heizi">￥48/张</span>
+						</div>
+					</div>
+					<div class="money">
+						<div class="money_1">
+							<p>座位：一次最多选4个座位</p>
+							<p>
+								请<span class="text-danger">点击左侧</span>座位图选择座位
+							</p>
+						</div>
+						<div></div>
+						<div class="money_2">
+							<span>总价 :</span>
+							<span class="text-danger">¥0</span>
+						</div>
+					</div>
+					<div class="shouji">
+						<div class="shouji-in">
+							<div class="shouji-1">
+								<div class="input1">
+									<input type="text" placeholder="输入手机号">
+								</div>
+								<div class="input1 mt-2">
+									<input type="text" placeholder="填写验证码">
+									<div class="huoqu">获取验证码</div>
+								</div>
+								<div class="button">
+									<button type="button">确认选座</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<iframe class="iframe_footer" src="footer.html"></iframe>
+		</footer>
+	</body>
+</html>

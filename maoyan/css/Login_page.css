@@ -1,0 +1,111 @@
+header{
+	width: 980px;
+	height:auto;
+	margin: 40px auto 30px;
+	position: relative;
+	zoom: 1;
+}
+header:after{
+	display: block;
+	/* 在左右两侧均不允许浮动元素。 */
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+	content: " ";
+}
+header>a{
+	margin: 0;
+	width: 230px;height: 45px;
+	background-position: -394px -677px;
+	background-image: url(../img/denglu.png);
+	background-repeat: no-repeat;
+	background-size: initial;
+	float: left;
+	display: block;
+	display: inline;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+.container{width: 980px;margin: 0 auto 70px;}
+.tu{
+
+	width: 480px;height: 370px;
+	margin: 0 115px 0 0;
+}
+.tu>img{width: 480px;height: 370px;}
+.reg{
+	width: 270px;
+	background: #fff;
+	margin: 0;padding: 0;
+		color: #666;
+}
+#k{height: 80px;}
+.from>span>a{
+	float: right;
+	font-size: 12px;
+	color: #666;
+	position: relative;
+	margin-right: 12px;
+}
+.from>span>a>i{
+	width: 14px;height: 14px;
+	background: url(../img/shouji.png) no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: 50%;right: -17px;
+	margin-top: -7px;
+}
+.input1{
+	box-sizing: border-box;
+	width: 100%;
+	height: 36px;
+	padding: 0;
+	border: 1px solid #aaa;
+	background-color: #fff;
+	overflow: hidden;
+	align-items: center;
+	line-height: 30px;
+}
+.jiantou{
+	width: 5px;
+	height: 5px;
+	display: inline-block;
+	border-right: 1px solid #646464;
+	border-top: 1px solid #646464;
+	transform: rotate(45deg);
+	margin-right: 4px;
+	position: relative;
+	bottom: 2px;
+}
+.input1>input{
+	border: 0;
+}
+.mi{position: relative;}
+.suozi{
+	width: 18px;height: 18px;
+	background-image: url(../img/denglu.png);
+	background-position: -1250px -527px;
+	position: absolute;
+	top: 10px;left: 7px;
+	display: inline-block;
+	line-height: 18px;
+	vertical-align: text-top;
+}
+p{margin-top: 0;margin-bottom: 0;}
+a:hover{text-decoration: none;}
+.weiba>p{text-align: center;color: #ccc;font-size: 12px;}
+.success{
+	color: #fff;
+	font-weight: 700;
+	background-color: green;
+	border: 1px solid green;
+	border-radius: 50%;
+}
+.fail{
+	color: #fff;
+	font-weight: 700;
+	background-color: red;
+	border: 1px solid red;
+	border-radius: 50%;
+}
